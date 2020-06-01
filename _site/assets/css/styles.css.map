@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"_sass/styles.scss"
+	],
+	"sourcesContent": [
+		"@import 'styles'",
+		"h1 {\n\tcolor: blue;\n}"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,EAAE,CAAC,EACF,KAAK,EAAE,IAAI,GACX"
+}
