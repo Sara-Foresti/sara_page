@@ -1,11 +1,34 @@
 @font-face {
-  // font-family: "Argesta";
-  // src: url("argestadisplay-regular-webfont.woff") format("woff");
+  font-family: "Argesta";
+  src: url("../fonts/argestadisplay-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.masthead {
+	background-color: #40bad5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	text-align: center
+}
+
 h1 {
-	color: blue;
-	// font-family: "Argesta";
+	color: #120136;
+	font-family: "Argesta";
+	font-size: 50px;
+}
+
+p {
+	color: #120136;
+	font-family: "Argesta";
+	font-size: 30px;
 }

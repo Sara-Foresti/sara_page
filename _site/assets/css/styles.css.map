@@ -7,8 +7,8 @@
 	],
 	"sourcesContent": [
 		"@import 'styles'",
-		"@font-face {\n  // font-family: \"Argesta\";\n  // src: url(\"argestadisplay-regular-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n}\n\nh1 {\n\tcolor: blue;\n\t// font-family: \"Argesta\";\n}"
+		"@font-face {\n  font-family: \"Argesta\";\n  src: url(\"../fonts/argestadisplay-regular-webfont.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n}\n\n* {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n}\n\n.masthead {\n\tbackground-color: #40bad5;\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n\tflex-direction: column;\n\theight: 100vh;\n\ttext-align: center\n}\n\nh1 {\n\tcolor: #120136;\n\tfont-family: \"Argesta\";\n\tfont-size: 50px;\n}\n\np {\n\tcolor: #120136;\n\tfont-family: \"Argesta\";\n\tfont-size: 30px;\n}"
 	],
 	"names": [],
-	"mappings": "ACAA,UAAU,CAGR,WAAW,CAAE,GAAG,CAChB,UAAU,CAAE,MAAM,CAGpB,AAAA,EAAE,AAAC,CACF,KAAK,CAAE,IAAI,CAEX"
+	"mappings": "ACAA,UAAU,CACR,WAAW,CAAE,SAAS,CACtB,GAAG,CAAE,mDAAmD,CAAC,cAAc,CACvE,WAAW,CAAE,GAAG,CAChB,UAAU,CAAE,MAAM,CAGpB,AAAA,CAAC,AAAC,CACD,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,UAAU,CACtB,AAED,AAAA,SAAS,AAAC,CACT,gBAAgB,CAAE,OAAO,CACzB,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CACnB,eAAe,CAAE,MAAM,CACvB,cAAc,CAAE,MAAM,CACtB,MAAM,CAAE,KAAK,CACb,UAAU,CAAE,MACb,CAAC,AAED,AAAA,EAAE,AAAC,CACF,KAAK,CAAE,OAAO,CACd,WAAW,CAAE,SAAS,CACtB,SAAS,CAAE,IAAI,CACf,AAED,AAAA,CAAC,AAAC,CACD,KAAK,CAAE,OAAO,CACd,WAAW,CAAE,SAAS,CACtB,SAAS,CAAE,IAAI,CACf"
 }
