@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Argesta";
-  src: url("../fonts/argestadisplay-regular-webfont.woff") format("woff");
+  font-family: "Poiret";
+  src: url("../fonts/PoiretOne-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -9,26 +9,87 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Poiret";
+	cursor: default;
 }
 
-.masthead {
-	background-color: #40bad5;
+.sf-masthead {
+	background-color: #26408B;
+	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column;
-	height: 100vh;
-	text-align: center
+	h1 {
+		color: #fff;
+		font-size: 75px;
+	}
+
+	p {
+		color: #fff;
+		font-size: 38px;
+	}
 }
 
-h1 {
-	color: #120136;
-	font-family: "Argesta";
-	font-size: 50px;
+.sf-masthead-content-wrapper {
+	position: relative;
+  width: 500px;
+  height: 500px;
 }
 
-p {
-	color: #120136;
-	font-family: "Argesta";
-	font-size: 30px;
+.sf-name_title {
+	text-align: left;
+	position: absolute;
+	top: 106px;
+  right: 125px;
+}
+
+.sf-roundel {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: #9900f6;
+	position: absolute;
+}
+
+.sf-navbar {
+	background: transparent;
+  position: fixed;
+  bottom: 0;
+  padding: 40px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.sf-navbar-content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #9900f6;
+	font-weight: 800;
+	max-width: 600px;
+  margin: 0 auto;
+  font-size: 25px;
+}
+
+.sf-logo-mini {
+	svg {
+		width: 70px;
+    height: 70px;
+	}
+
+	g {
+		fill: #9900f6;
+	}
+
+}
+
+.sf-footer {
+	background-color: #3D60A7;
+	padding: 25px;
+
+	p {
+		text-align-last: center;
+		font-size: 25px;
+		color: #0F084B;
+	}
 }
