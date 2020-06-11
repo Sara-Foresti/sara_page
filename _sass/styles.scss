@@ -53,11 +53,11 @@
 
 .sf-navbar {
 	background: transparent;
-  position: fixed;
-  bottom: 0;
   padding: 40px 0;
   text-align: center;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .sf-navbar-content {
@@ -84,12 +84,32 @@
 }
 
 .sf-footer {
-	background-color: #3D60A7;
+	background-color: #0F084B;
 	padding: 25px;
 
 	p {
 		text-align-last: center;
 		font-size: 25px;
-		color: #0F084B;
+		color: #3D60A7;
 	}
+}
+
+.sf-about {
+	height: 100vh;
+	background-color: #fff;
+}
+
+.sf-skills {
+	height: 100vh;
+	background-color: #617be3;  // maybe
+}
+
+.sf-work {
+	height: 100vh;
+	background-color: #fff;
+}
+
+.sf-contacts {
+	height: 100vh;
+	background-color: #3D60A7;
 }
