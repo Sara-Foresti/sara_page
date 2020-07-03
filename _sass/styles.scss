@@ -58,6 +58,12 @@
   width: 100%;
   position: absolute;
   bottom: 0;
+  height: fit-content;
+}
+
+.sf-fixed {
+	position: fixed;
+	top: 0;
 }
 
 .sf-navbar-content {
