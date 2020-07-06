@@ -1,121 +1,47 @@
-@font-face {
-  font-family: "Poiret";
-  src: url("../fonts/PoiretOne-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
+// Settings
+// Used with preprocessors and contain font, colors definitions, etc
+@import 'settings/_colours';
+@import 'settings/_fonts';
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Poiret";
-	cursor: default;
-}
+// Tools
+// Globally used mixins and functions. ==> NOT CLEAR
 
-.sf-masthead {
-	background-color: #26408B;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	h1 {
-		color: #fff;
-		font-size: 75px;
-	}
+// Generic
+// Reset and/or normalize styles, box-sizing definition, etc.
+// This is the first layer which generates actual CSS 
+// ==> stuff like * {margin: 0; box-sizing: border-box;} and so on...
+// But it should be to override 3rd party libraries (like bootstrap)
+@import 'generic/_base';
 
-	p {
-		color: #fff;
-		font-size: 38px;
-	}
-}
+// Elements
+// Styling for bare HTML elements (like H1, A, etc.).
+// These come with default styling from the browser so we can redefine them here 
+// ==> maybe not needed, or if I repeat same styling across different sections, put it here
 
-.sf-masthead-content-wrapper {
-	position: relative;
-  width: 500px;
-  height: 500px;
-}
+// Objects
+// Class-based selectors which define undecorated design patterns,
+// for example media object known from OOCSS ==> NOT CLEAR (what's a media object?)
 
-.sf-name_title {
-	text-align: left;
-	position: absolute;
-	top: 106px;
-  right: 125px;
-}
+// Components
+// Specific UI components. This is where majority of our work takes place and
+// our UI components are often composed of Objects and Components ==> buttons, cards, etc...
+@import 'components/_navbar';
+@import 'components/_footer';
 
-.sf-roundel {
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
-	background-color: #9900f6;
-	position: absolute;
-}
+// Blocks
+// Collections of components that create specific areas on the site
+// Mainly used for specific position and spacing styling ==> IN MY CASE, THE PAGE SECTIONS (MASTHEAD, ABOUT, etc...)
+@import 'blocks/_masthead';
+@import 'blocks/_about';
+@import 'blocks/_skills';
+@import 'blocks/_work';
+@import 'blocks/_contacts';
 
-.sf-navbar {
-	background: transparent;
-  padding: 40px 0;
-  text-align: center;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  height: fit-content;
-}
+// Animations
+// Animation classes ==> could be the STICKY NAVBAR CLASS?
+@import 'animations/_navbar';
 
-.sf-fixed {
-	position: fixed;
-	top: 0;
-}
 
-.sf-navbar-content {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	color: #9900f6;
-	font-weight: 800;
-	max-width: 600px;
-  margin: 0 auto;
-  font-size: 25px;
-}
-
-.sf-logo-mini {
-	svg {
-		width: 70px;
-    height: 70px;
-	}
-
-	g {
-		fill: #9900f6;
-	}
-
-}
-
-.sf-footer {
-	background-color: #0F084B;
-	padding: 25px;
-
-	p {
-		text-align-last: center;
-		font-size: 25px;
-		color: #3D60A7;
-	}
-}
-
-.sf-about {
-	height: 100vh;
-	background-color: #fff;
-}
-
-.sf-skills {
-	height: 100vh;
-	background-color: #617be3;  // maybe
-}
-
-.sf-work {
-	height: 100vh;
-	background-color: #fff;
-}
-
-.sf-contacts {
-	height: 100vh;
-	background-color: #3D60A7;
-}
+// Utilities
+// Utilities and helper classes with ability to override anything
+// which goes before it in the triangle, eg. hide helper class ==> HIDE & SHOW classes? 

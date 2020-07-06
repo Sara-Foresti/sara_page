@@ -1,0 +1,31 @@
+.sf-navbar {
+	background: transparent;
+  padding: 40px 0;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: fit-content;
+}
+
+.sf-navbar-content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: $accent;
+	font-weight: 800;
+	max-width: 600px;
+  margin: 0 auto;
+  font-size: 25px;
+}
+
+.sf-logo-mini {
+	svg {
+		width: 70px;
+    height: 70px;
+	}
+
+	g {
+		fill: $accent;
+	}
+}
