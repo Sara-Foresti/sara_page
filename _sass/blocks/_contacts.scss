@@ -1,4 +1,40 @@
 .sf-contacts {
-	height: 100vh;
-	background-color: $light;
+	// height: 100vh;
+	background-color: $bright;
+	height: calc(100vh - 250px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+	p {
+		color: #9900f6;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 40px;
+	}
+
+	.sf-contact-email{
+		text-align: center;
+		color: $white;
+		font-size: 30px;
+	}
+
+	.sf-contact-badges {
+		display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+		
+		.sf-contact-badge:not(:last-child) {
+			margin-right: 30px;
+		}
+
+		svg {
+			width: 40px;
+	    height: 40px;
+	    fill: $white;
+	    cursor: pointer;
+		}
+	}
 }

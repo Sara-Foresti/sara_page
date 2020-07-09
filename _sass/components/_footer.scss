@@ -3,8 +3,22 @@
 	padding: 25px;
 
 	p {
-		text-align-last: center;
+		text-align: center;
 		font-size: 25px;
 		color: $light;
+	}
+
+	.credits {
+		text-align: left;
+    color: #3D60A7;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+		p {
+			text-align: left;
+			font-size: 16px;
+		}
 	}
 }
