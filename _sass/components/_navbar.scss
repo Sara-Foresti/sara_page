@@ -1,11 +1,12 @@
 .sf-navbar {
-	background: transparent;
-  padding: 40px 0;
+	background-color: transparent;
+  padding: 10px 0;
   text-align: center;
   width: 100%;
   position: absolute;
   bottom: 0;
   height: fit-content;
+  transition: background-color 1s linear 
 }
 
 .sf-navbar-content {
@@ -24,6 +25,8 @@
 }
 
 .sf-logo-mini {
+	margin-top: 25px;
+
 	svg {
 		width: 70px;
     height: 70px;
