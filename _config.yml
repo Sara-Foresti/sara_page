@@ -34,9 +34,16 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# sass:
+#   sass_dir: _sass
+#   style: compressed
+#   load_paths: 
+#     - node_modules
+
 sass:
-  sass_dir: _sass
-  style: compressed
+  load_paths:
+    - _sass
+    - node_modules/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -57,3 +64,5 @@ sass:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+exclude: []

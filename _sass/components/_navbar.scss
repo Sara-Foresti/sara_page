@@ -22,17 +22,35 @@
 
 .tab {
 	width: 91px;
+	cursor: pointer;
+	transition: color .25s linear;
+	&:hover {
+	 color: $white;
+	}
 }
 
 .sf-logo-mini {
 	margin-top: 25px;
+	cursor: pointer;
+	
+	&:hover {
+		g {
+		  fill: $white;
+		}
+	}
 
 	svg {
 		width: 70px;
     height: 70px;
+    cursor: pointer;
+	}
+
+	path {
+		cursor: pointer;
 	}
 
 	g {
 		fill: $accent;
+		transition: fill .25s linear;
 	}
 }

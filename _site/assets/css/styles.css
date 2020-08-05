@@ -1,3 +1,65 @@
-@font-face{font-family:"Poiret";src:url("../fonts/PoiretOne-Regular.ttf");font-weight:400;font-style:normal}*{margin:0;padding:0;box-sizing:border-box;font-family:"Poiret";cursor:default}a{text-decoration:none;color:inherit;cursor:pointer}.sf-navbar{background-color:transparent;padding:10px 0;text-align:center;width:100%;position:absolute;bottom:0;height:fit-content;transition:background-color 1s linear}.sf-navbar-content{display:flex;justify-content:space-around;align-items:center;color:#9900f6;font-weight:800;max-width:600px;margin:0 auto;font-size:25px}.tab{width:91px}.sf-logo-mini{margin-top:25px}.sf-logo-mini svg{width:70px;height:70px}.sf-logo-mini g{fill:#9900f6}.sf-footer{background-color:#0F084B;padding:25px}.sf-footer p{text-align:center;font-size:25px;color:#3D60A7}.sf-footer .credits{text-align:left;color:#3D60A7;font-size:18px;display:flex;justify-content:space-around;margin-top:20px}.sf-footer .credits p{text-align:left;font-size:16px}.sf-masthead{background-color:#26408B;height:100vh;display:flex;align-items:center;justify-content:center}.sf-masthead h1{color:#fff;font-size:75px}.sf-masthead p{color:#fff;font-size:38px}.sf-masthead-content-wrapper{position:relative;width:500px;height:500px}.sf-name_title{text-align:left;position:absolute;top:106px;right:125px}.sf-roundel{width:300px;height:300px;border-radius:50%;background-color:#9900f6;position:absolute}.sf-about{height:100vh;background-color:#fff}.sf-skills{height:100vh;background-color:#3D60A7}.sf-work{height:100vh;background-color:#fff}.sf-contacts{background-color:#617be3;height:calc(100vh - 250px);display:flex;align-items:center;justify-content:center}.sf-contacts p{color:#9900f6;text-align:center;font-size:50px;font-weight:700;margin-bottom:40px}.sf-contacts .sf-contact-email{text-align:center;color:#fff;font-size:30px}.sf-contacts .sf-contact-badges{display:flex;justify-content:center;align-items:center;margin-top:20px}.sf-contacts .sf-contact-badges .sf-contact-badge:not(:last-child){margin-right:30px}.sf-contacts .sf-contact-badges svg{width:40px;height:40px;fill:#fff;cursor:pointer}.sf-fixed{position:fixed;top:0;background-color:rgba(15,8,75,0)}
+@font-face { font-family: "Poiret"; src: url("../fonts/PoiretOne-Regular.ttf"); font-weight: 400; font-style: normal; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poiret"; cursor: default; }
+
+a { text-decoration: none; color: inherit; cursor: pointer; }
+
+.sf-navbar { background-color: transparent; padding: 10px 0; text-align: center; width: 100%; position: absolute; bottom: 0; height: fit-content; transition: background-color 1s linear; }
+
+.sf-navbar-content { display: flex; justify-content: space-around; align-items: center; color: #9900f6; font-weight: 800; max-width: 600px; margin: 0 auto; font-size: 25px; }
+
+.tab { width: 91px; cursor: pointer; transition: color .25s linear; }
+
+.tab:hover { color: #fff; }
+
+.sf-logo-mini { margin-top: 25px; cursor: pointer; }
+
+.sf-logo-mini:hover g { fill: #fff; }
+
+.sf-logo-mini svg { width: 70px; height: 70px; cursor: pointer; }
+
+.sf-logo-mini path { cursor: pointer; }
+
+.sf-logo-mini g { fill: #9900f6; transition: fill .25s linear; }
+
+.sf-footer { background-color: #0F084B; padding: 25px; }
+
+.sf-footer p { text-align: center; font-size: 25px; color: #3D60A7; }
+
+.sf-footer .credits { text-align: left; color: #3D60A7; font-size: 18px; display: flex; justify-content: space-around; margin-top: 20px; }
+
+.sf-footer .credits p { text-align: left; font-size: 16px; }
+
+.sf-masthead { background-color: #26408B; height: 100vh; display: flex; align-items: center; justify-content: center; }
+
+.sf-masthead h1 { color: #fff; font-size: 75px; }
+
+.sf-masthead p { color: #fff; font-size: 38px; }
+
+.sf-masthead-content-wrapper { position: relative; width: 500px; height: 500px; }
+
+.sf-name_title { text-align: left; position: absolute; top: 106px; right: 125px; }
+
+.sf-roundel { width: 300px; height: 300px; border-radius: 50%; background-color: #9900f6; position: absolute; }
+
+.sf-about { height: 100vh; background-color: #fff; }
+
+.sf-skills { height: 100vh; background-color: #3D60A7; }
+
+.sf-work { height: 100vh; background-color: #fff; }
+
+.sf-contacts { background-color: #617be3; height: calc(100vh - 250px); display: flex; align-items: center; justify-content: center; }
+
+.sf-contacts p { color: #9900f6; text-align: center; font-size: 50px; font-weight: 700; margin-bottom: 40px; }
+
+.sf-contacts .sf-contact-email { text-align: center; color: #fff; font-size: 30px; }
+
+.sf-contacts .sf-contact-badges { display: flex; justify-content: center; align-items: center; margin-top: 20px; }
+
+.sf-contacts .sf-contact-badges .sf-contact-badge:not(:last-child) { margin-right: 30px; }
+
+.sf-contacts .sf-contact-badges svg { width: 40px; height: 40px; fill: #fff; cursor: pointer; }
+
+.sf-fixed { position: fixed; top: 0; background-color: rgba(15, 8, 75, 0); }
 
 /*# sourceMappingURL=styles.css.map */
