@@ -23,5 +23,17 @@ window.addEventListener('scroll', function(){
 
 
 $(".tab").on("click", function (e) {
-  console.log('blabla');
+  event.preventDefault();
+
+  $('html, body').animate({
+    scrollTop: $($(this).parent().attr('href')).offset().top,
+  }, 700);
+});
+
+$(".sf-logo-mini").on("click", function (e) {
+  event.preventDefault();
+
+  $('html, body').animate({
+    scrollTop: 0,
+  }, 700);
 });
