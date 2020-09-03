@@ -1,5 +1,3 @@
-// import $ from 'jQuery';
-
 const navbar = document.querySelector('.sf-navbar');
 
 const bodyHeight = document.body.getBoundingClientRect().height;

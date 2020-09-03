@@ -1,4 +1,85 @@
 .sf-skills {
 	height: 100vh;
 	background-color: $light;  // maybe
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sf-skills-wrapper {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sf-skills-languages, .sf-skills-ab_tools {
+	width: 50%;
+	text-align: center;
+	color: $white;
+	position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sf-skillset-name {
+	height: 200px;
+  width: 200px;
+  background-color: $accent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
+.sf-skillset-name:hover + .sf-ab-skills-container .sf-ab-skill,
+.sf-skillset-name:hover + .sf-code-skills-container .sf-code-skill {
+  // transform: translate(200px);
+}
+
+@mixin on-circle($item-count, $circle-size, $item-size) {
+  position: relative;
+  width:  $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%;       
+  
+  > * {
+    position: absolute;
+    top:  50%; 
+    left: 50%;
+    width:  $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+    border-radius: 50%;
+    background-color: $bright;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: 
+          rotate($rot * 1deg) 
+          // translate(0) 
+          translate($circle-size/2)
+          rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+.sf-ab-skills-container, .sf-code-skills-container {
+  @include on-circle($item-count: 5, $circle-size: 400px, $item-size: 120px); 
 }

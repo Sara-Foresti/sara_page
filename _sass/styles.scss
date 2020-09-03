@@ -22,6 +22,7 @@
 // Objects
 // Class-based selectors which define undecorated design patterns,
 // for example media object known from OOCSS ==> NOT CLEAR (what's a media object?)
+@import 'objects/_container'; // would somenthing like this go here? (defines a max width)
 
 // Components
 // Specific UI components. This is where majority of our work takes place and

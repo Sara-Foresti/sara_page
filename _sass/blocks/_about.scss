@@ -1,4 +1,33 @@
 .sf-about {
-	height: 100vh; // this should become a reusable class
 	background-color: $white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sf-about-wrapper {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sf-about-roundel {
+	width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: $accent;
+  flex-shrink: 0;
+}
+
+.sf-about-copy {
+	text-align: center;
+	color: $dark;
+	font-size: 30px;
+	width: 74%;
+  font-weight: 600;
+
+	p {
+		margin-bottom: 12px;
+	}
 }

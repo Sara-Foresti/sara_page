@@ -4,6 +4,8 @@
 
 a { text-decoration: none; color: inherit; cursor: pointer; }
 
+.sf-container { max-width: 1280px; }
+
 .sf-navbar { background-color: transparent; padding: 10px 0; text-align: center; width: 100%; position: absolute; bottom: 0; height: fit-content; transition: background-color 1s linear; }
 
 .sf-navbar-content { display: flex; justify-content: space-around; align-items: center; color: #9900f6; font-weight: 800; max-width: 600px; margin: 0 auto; font-size: 25px; }
@@ -42,9 +44,37 @@ a { text-decoration: none; color: inherit; cursor: pointer; }
 
 .sf-roundel { width: 300px; height: 300px; border-radius: 50%; background-color: #9900f6; position: absolute; }
 
-.sf-about { height: 100vh; background-color: #fff; }
+.sf-about { background-color: #fff; height: 100vh; display: flex; align-items: center; justify-content: center; }
 
-.sf-skills { height: 100vh; background-color: #3D60A7; }
+.sf-about-wrapper { display: flex; justify-content: space-between; align-items: center; }
+
+.sf-about-roundel { width: 300px; height: 300px; border-radius: 50%; background-color: #9900f6; flex-shrink: 0; }
+
+.sf-about-copy { text-align: center; color: #0F084B; font-size: 30px; width: 74%; font-weight: 600; }
+
+.sf-about-copy p { margin-bottom: 12px; }
+
+.sf-skills { height: 100vh; background-color: #3D60A7; display: flex; align-items: center; justify-content: center; }
+
+.sf-skills-wrapper { display: flex; justify-content: space-between; align-items: center; }
+
+.sf-skills-languages, .sf-skills-ab_tools { width: 50%; text-align: center; color: #fff; position: relative; display: flex; align-items: center; justify-content: center; }
+
+.sf-skillset-name { height: 200px; width: 200px; background-color: #9900f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: absolute; font-size: 30px; font-weight: 600; }
+
+.sf-ab-skills-container, .sf-code-skills-container { position: relative; width: 400px; height: 400px; padding: 0; border-radius: 50%; }
+
+.sf-ab-skills-container > *, .sf-code-skills-container > * { position: absolute; top: 50%; left: 50%; width: 120px; height: 120px; margin: -60px; border-radius: 50%; background-color: #617be3; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 600; }
+
+.sf-ab-skills-container > *:nth-of-type(1), .sf-code-skills-container > *:nth-of-type(1) { transform: rotate(0deg) translate(200px) rotate(0deg); }
+
+.sf-ab-skills-container > *:nth-of-type(2), .sf-code-skills-container > *:nth-of-type(2) { transform: rotate(72deg) translate(200px) rotate(-72deg); }
+
+.sf-ab-skills-container > *:nth-of-type(3), .sf-code-skills-container > *:nth-of-type(3) { transform: rotate(144deg) translate(200px) rotate(-144deg); }
+
+.sf-ab-skills-container > *:nth-of-type(4), .sf-code-skills-container > *:nth-of-type(4) { transform: rotate(216deg) translate(200px) rotate(-216deg); }
+
+.sf-ab-skills-container > *:nth-of-type(5), .sf-code-skills-container > *:nth-of-type(5) { transform: rotate(288deg) translate(200px) rotate(-288deg); }
 
 .sf-work { height: 100vh; background-color: #fff; }
 
