@@ -4,9 +4,9 @@
 
 a { text-decoration: none; color: inherit; cursor: pointer; }
 
-.sf-container { max-width: 1280px; }
+.sf-container { width: 1280px; }
 
-.sf-navbar { background-color: transparent; padding: 10px 0; text-align: center; width: 100%; position: absolute; bottom: 0; height: fit-content; transition: background-color 1s linear; }
+.sf-navbar { background-color: transparent; padding: 10px 0; text-align: center; width: 100%; position: absolute; bottom: 0; height: fit-content; transition: background-color 1s linear; z-index: 10; }
 
 .sf-navbar-content { display: flex; justify-content: space-around; align-items: center; color: #9900f6; font-weight: 800; max-width: 600px; margin: 0 auto; font-size: 25px; }
 
@@ -60,21 +60,31 @@ a { text-decoration: none; color: inherit; cursor: pointer; }
 
 .sf-skills-languages, .sf-skills-ab_tools { width: 50%; text-align: center; color: #fff; position: relative; display: flex; align-items: center; justify-content: center; }
 
-.sf-skillset-name { height: 200px; width: 200px; background-color: #9900f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: absolute; font-size: 30px; font-weight: 600; }
+.sf-skillset-name { height: 200px; width: 200px; background-color: #9900f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: absolute; font-size: 30px; font-weight: 600; z-index: 2; cursor: pointer; }
 
 .sf-ab-skills-container, .sf-code-skills-container { position: relative; width: 400px; height: 400px; padding: 0; border-radius: 50%; }
 
 .sf-ab-skills-container > *, .sf-code-skills-container > * { position: absolute; top: 50%; left: 50%; width: 120px; height: 120px; margin: -60px; border-radius: 50%; background-color: #617be3; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 600; }
 
-.sf-ab-skills-container > *:nth-of-type(1), .sf-code-skills-container > *:nth-of-type(1) { transform: rotate(0deg) translate(200px) rotate(0deg); }
+.sf-ab-skills-container > *:nth-of-type(1), .sf-code-skills-container > *:nth-of-type(1) { transform: translate(0); transition: transform 0.8s ease; }
 
-.sf-ab-skills-container > *:nth-of-type(2), .sf-code-skills-container > *:nth-of-type(2) { transform: rotate(72deg) translate(200px) rotate(-72deg); }
+.sf-ab-skills-container > *:nth-of-type(2), .sf-code-skills-container > *:nth-of-type(2) { transform: translate(0); transition: transform 0.8s ease; }
 
-.sf-ab-skills-container > *:nth-of-type(3), .sf-code-skills-container > *:nth-of-type(3) { transform: rotate(144deg) translate(200px) rotate(-144deg); }
+.sf-ab-skills-container > *:nth-of-type(3), .sf-code-skills-container > *:nth-of-type(3) { transform: translate(0); transition: transform 0.8s ease; }
 
-.sf-ab-skills-container > *:nth-of-type(4), .sf-code-skills-container > *:nth-of-type(4) { transform: rotate(216deg) translate(200px) rotate(-216deg); }
+.sf-ab-skills-container > *:nth-of-type(4), .sf-code-skills-container > *:nth-of-type(4) { transform: translate(0); transition: transform 0.8s ease; }
 
-.sf-ab-skills-container > *:nth-of-type(5), .sf-code-skills-container > *:nth-of-type(5) { transform: rotate(288deg) translate(200px) rotate(-288deg); }
+.sf-ab-skills-container > *:nth-of-type(5), .sf-code-skills-container > *:nth-of-type(5) { transform: translate(0); transition: transform 0.8s ease; }
+
+.sf-skillset-name:hover + [class*="-container"] > *:nth-of-type(1) { transform: rotate(0deg) translate(200px) rotate(0deg); transition: transform 0.8s ease; }
+
+.sf-skillset-name:hover + [class*="-container"] > *:nth-of-type(2) { transform: rotate(72deg) translate(200px) rotate(-72deg); transition: transform 0.8s ease; }
+
+.sf-skillset-name:hover + [class*="-container"] > *:nth-of-type(3) { transform: rotate(144deg) translate(200px) rotate(-144deg); transition: transform 0.8s ease; }
+
+.sf-skillset-name:hover + [class*="-container"] > *:nth-of-type(4) { transform: rotate(216deg) translate(200px) rotate(-216deg); transition: transform 0.8s ease; }
+
+.sf-skillset-name:hover + [class*="-container"] > *:nth-of-type(5) { transform: rotate(288deg) translate(200px) rotate(-288deg); transition: transform 0.8s ease; }
 
 .sf-work { height: 100vh; background-color: #fff; }
 
@@ -84,11 +94,17 @@ a { text-decoration: none; color: inherit; cursor: pointer; }
 
 .sf-contacts .sf-contact-email { text-align: center; color: #fff; font-size: 30px; }
 
+.sf-contacts .sf-contact-email:hover { color: #9900f6; }
+
 .sf-contacts .sf-contact-badges { display: flex; justify-content: center; align-items: center; margin-top: 20px; }
 
 .sf-contacts .sf-contact-badges .sf-contact-badge:not(:last-child) { margin-right: 30px; }
 
 .sf-contacts .sf-contact-badges svg { width: 40px; height: 40px; fill: #fff; cursor: pointer; }
+
+.sf-contacts .sf-contact-badges .sf-contact-badge { cursor: pointer; }
+
+.sf-contacts .sf-contact-badges .sf-contact-badge:hover svg { fill: #9900f6; }
 
 .sf-fixed { position: fixed; top: 0; background-color: rgba(15, 8, 75, 0); }
 

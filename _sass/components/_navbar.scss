@@ -6,7 +6,8 @@
   position: absolute;
   bottom: 0;
   height: fit-content;
-  transition: background-color 1s linear 
+  transition: background-color 1s linear;
+  z-index: 10;
 }
 
 .sf-navbar-content {

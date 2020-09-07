@@ -33,12 +33,8 @@
   position: absolute;
   font-size: 30px;
   font-weight: 600;
-}
-
-
-.sf-skillset-name:hover + .sf-ab-skills-container .sf-ab-skill,
-.sf-skillset-name:hover + .sf-code-skills-container .sf-code-skill {
-  // transform: translate(200px);
+  z-index: 2;
+  cursor: pointer;
 }
 
 @mixin on-circle($item-count, $circle-size, $item-size) {
@@ -69,10 +65,8 @@
     @for $i from 1 through $item-count {
       &:nth-of-type(#{$i}) {
         transform: 
-          rotate($rot * 1deg) 
-          // translate(0) 
-          translate($circle-size/2)
-          rotate($rot * -1deg);
+          translate(0);
+        transition: transform 0.8s ease;
       }
 
       $rot: $rot + $angle;
@@ -82,4 +76,27 @@
 
 .sf-ab-skills-container, .sf-code-skills-container {
   @include on-circle($item-count: 5, $circle-size: 400px, $item-size: 120px); 
+}
+
+@mixin on-name-hover($item-count, $circle-size, $item-size) {
+  > * {
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: 
+          rotate($rot * 1deg) 
+          translate($circle-size/2)
+          rotate($rot * -1deg);
+        transition: transform 0.8s ease;
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+.sf-skillset-name:hover + [class*="-container"] {
+  @include on-name-hover($item-count: 5, $circle-size: 400px, $item-size: 120px);
 }

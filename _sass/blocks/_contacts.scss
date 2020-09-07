@@ -1,5 +1,4 @@
 .sf-contacts {
-	// height: 100vh;
 	background-color: $bright;
 	height: calc(100vh - 250px);
   display: flex;
@@ -18,6 +17,10 @@
 		text-align: center;
 		color: $white;
 		font-size: 30px;
+
+		&:hover {
+			color: $accent;
+		}
 	}
 
 	.sf-contact-badges {
@@ -35,6 +38,16 @@
 	    height: 40px;
 	    fill: $white;
 	    cursor: pointer;
+		}
+
+		.sf-contact-badge {
+			cursor: pointer;
+			
+			&:hover{
+				svg {
+					fill: $accent;
+				}
+			}
 		}
 	}
 }
