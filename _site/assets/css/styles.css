@@ -60,7 +60,13 @@ a { text-decoration: none; color: inherit; cursor: pointer; }
 
 .sf-skills-languages, .sf-skills-ab_tools { width: 50%; text-align: center; color: #fff; position: relative; display: flex; align-items: center; justify-content: center; }
 
-.sf-skillset-name { height: 200px; width: 200px; background-color: #9900f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: absolute; font-size: 30px; font-weight: 600; z-index: 2; cursor: pointer; }
+.sf-skillset-name { height: 200px; width: 200px; background-color: #9900f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: absolute; font-size: 30px; font-weight: 600; z-index: 2; cursor: pointer; box-shadow: 0px 0px 50px 1px rgba(255, 255, 255, 0); animation: pulse 2s ease-in-out infinite; }
+
+.sf-skillset-name:hover { animation: none; }
+
+@keyframes pulse { 0% { box-shadow: 0px 0px 50px 1px rgba(255, 255, 255, 0); }
+  50% { box-shadow: 0px 0px 50px 1px rgba(255, 255, 255, 0.35); }
+  100% { box-shadow: 0px 0px 50px 1px rgba(255, 255, 255, 0); } }
 
 .sf-ab-skills-container, .sf-code-skills-container { position: relative; width: 400px; height: 400px; padding: 0; border-radius: 50%; }
 
@@ -86,7 +92,11 @@ a { text-decoration: none; color: inherit; cursor: pointer; }
 
 .sf-skillset-name:hover + [class*="-container"] > *:nth-of-type(5) { transform: rotate(288deg) translate(200px) rotate(-288deg); transition: transform 0.8s ease; }
 
-.sf-work { height: 100vh; background-color: #fff; }
+.sf-work { height: 100vh; background-color: #fff; display: flex; align-items: center; justify-content: center; }
+
+.sf-work-wrapper { display: flex; align-items: center; justify-content: center; }
+
+.sf-exp { width: 150px; height: 150px; border-radius: 50%; background-color: #26408B; color: #fff; font-size: 25px; display: flex; align-items: center; justify-content: center; text-align: center; }
 
 .sf-contacts { background-color: #617be3; height: calc(100vh - 250px); display: flex; align-items: center; justify-content: center; }
 

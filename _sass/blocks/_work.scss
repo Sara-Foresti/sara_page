@@ -1,4 +1,26 @@
 .sf-work {
 	height: 100vh;
 	background-color: $white;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sf-work-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sf-exp {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: $medium;
+	color: $white;
+	font-size: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
